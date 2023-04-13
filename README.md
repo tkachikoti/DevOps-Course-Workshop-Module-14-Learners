@@ -440,7 +440,7 @@ Let's run `kubectl top pod` to watch the load on the application increase.
 
 Our Pods don't currently have any resource constraints, so the increasing load will eventually use up all of the node's available resources.
 
-Let's prevent that by adding some resource constraints to the Deployment:
+Let's prevent that by adding some resource constraints to the Deployment ([you can add resource constraints to any item under `containers` in a deployment file](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#example-1)):
 
 ```yaml
 resources:
