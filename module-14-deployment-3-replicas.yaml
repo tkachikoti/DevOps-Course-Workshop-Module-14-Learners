@@ -1,4 +1,4 @@
-# module-14-deployment-2-replicas.yaml
+# module-14-deployment-3-replicas.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: module-14-pod
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
